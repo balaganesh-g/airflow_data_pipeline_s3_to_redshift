@@ -1,0 +1,76 @@
+[2022-12-26T05:03:09.529+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: sparkify_etl_airflow.Stage_events scheduled__2022-12-25T00:00:00+00:00 [queued]>
+[2022-12-26T05:03:09.540+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: sparkify_etl_airflow.Stage_events scheduled__2022-12-25T00:00:00+00:00 [queued]>
+[2022-12-26T05:03:09.540+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-26T05:03:09.541+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 4
+[2022-12-26T05:03:09.541+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-26T05:03:09.740+0000] {taskinstance.py:1304} INFO - Executing <Task(StageToRedshiftOperator): Stage_events> on 2022-12-25 00:00:00+00:00
+[2022-12-26T05:03:09.888+0000] {standard_task_runner.py:55} INFO - Started process 1547 to run task
+[2022-12-26T05:03:09.902+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'sparkify_etl_***', 'Stage_events', 'scheduled__2022-12-25T00:00:00+00:00', '--job-id', '315', '--raw', '--subdir', 'DAGS_FOLDER/s3_to_redshift.py', '--cfg-path', '/tmp/tmpdymtvque']
+[2022-12-26T05:03:09.903+0000] {standard_task_runner.py:83} INFO - Job 315: Subtask Stage_events
+[2022-12-26T05:03:10.185+0000] {task_command.py:389} INFO - Running <TaskInstance: sparkify_etl_airflow.Stage_events scheduled__2022-12-25T00:00:00+00:00 [running]> on host 8fd7e45d4638
+[2022-12-26T05:03:10.322+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=bala
+AIRFLOW_CTX_DAG_ID=sparkify_etl_***
+AIRFLOW_CTX_TASK_ID=Stage_events
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-25T00:00:00+00:00
+[2022-12-26T05:03:10.332+0000] {base.py:73} INFO - Using connection ID 'aws_credentials' for task execution.
+[2022-12-26T05:03:10.333+0000] {connection_wrapper.py:332} INFO - AWS Connection (conn_id='aws_credentials', conn_type='aws') credentials retrieved from login and password.
+[2022-12-26T05:03:10.347+0000] {stage_redshift.py:45} INFO - Copying data from S3 to Redshift staging staging_events table
+[2022-12-26T05:03:10.348+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-26T05:03:10.348+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-26T05:03:10.348+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-26T05:03:10.348+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-26T05:03:10.348+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-26T05:03:10.349+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-26T05:03:10.349+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-26T05:03:10.349+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-26T05:03:10.349+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-26T05:03:10.349+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-26T05:03:10.349+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-26T05:03:10.349+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-26T05:03:10.350+0000] {stage_redshift.py:47} INFO - Rendered Key: log_data
+[2022-12-26T05:03:10.350+0000] {stage_redshift.py:59} INFO - Executing query to copy data from 's3://udacity-dend/log_data' to 'staging_events'
+[2022-12-26T05:03:10.357+0000] {base.py:73} INFO - Using connection ID 'redshift' for task execution.
+[2022-12-26T05:03:11.195+0000] {sql.py:364} INFO - Running statement: 
+        COPY staging_events
+        FROM 's3://udacity-dend/log_data'
+        ACCESS_KEY_ID 'AKIAQYFB5QCYRS2HRLUF'
+        SECRET_ACCESS_KEY '***'
+        REGION AS 'us-west-2'
+        FORMAT AS JSON 's3://udacity-dend/log_json_path.json'
+        ;
+    , parameters: None
+[2022-12-26T05:03:40.615+0000] {local_task_job.py:224} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2022-12-26T05:03:40.619+0000] {process_utils.py:133} INFO - Sending Signals.SIGTERM to group 1547. PIDs of all processes in the group: [1547]
+[2022-12-26T05:03:40.619+0000] {process_utils.py:84} INFO - Sending the signal Signals.SIGTERM to group 1547
+[2022-12-26T05:03:59.633+0000] {taskinstance.py:1483} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-12-26T05:03:59.770+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=sparkify_etl_***, task_id=Stage_events, execution_date=20221225T000000, start_date=20221226T050309, end_date=20221226T050359
+[2022-12-26T05:03:59.873+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=1547, status='terminated', exitcode=0, started='05:03:09') (1547) terminated with exit code 0

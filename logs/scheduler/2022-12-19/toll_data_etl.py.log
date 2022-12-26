@@ -1,0 +1,98 @@
+[2022-12-19T17:49:09.237+0000] {processor.py:153} INFO - Started process (PID=2459) to work on /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:49:09.238+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/toll_data_etl.py for tasks to queue
+[2022-12-19T17:49:09.238+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:49:09.238+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:49:09.288+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ETL_toll_data']) retrieved from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:49:09.429+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:49:09.428+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-19T17:49:09.471+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:49:09.471+0000] {dag.py:3427} INFO - Setting next_dagrun for ETL_toll_data to 2022-12-19T17:49:09.254842+00:00, run_after=2022-12-20T17:49:09.254842+00:00
+[2022-12-19T17:49:09.771+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/toll_data_etl.py took 0.538 seconds
+[2022-12-19T17:49:40.529+0000] {processor.py:153} INFO - Started process (PID=2531) to work on /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:49:40.533+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/toll_data_etl.py for tasks to queue
+[2022-12-19T17:49:40.536+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:49:40.535+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:49:40.603+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ETL_toll_data']) retrieved from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:49:40.705+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:49:40.705+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-19T17:49:40.734+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:49:40.734+0000] {dag.py:3427} INFO - Setting next_dagrun for ETL_toll_data to 2022-12-19T17:49:40.558642+00:00, run_after=2022-12-20T17:49:40.558642+00:00
+[2022-12-19T17:49:40.766+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/toll_data_etl.py took 0.252 seconds
+[2022-12-19T17:50:11.092+0000] {processor.py:153} INFO - Started process (PID=2609) to work on /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:50:11.182+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/toll_data_etl.py for tasks to queue
+[2022-12-19T17:50:11.182+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:50:11.182+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:50:11.199+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ETL_toll_data']) retrieved from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:50:11.292+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:50:11.292+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-19T17:50:11.320+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:50:11.320+0000] {dag.py:3427} INFO - Setting next_dagrun for ETL_toll_data to 2022-12-19T17:50:11.187456+00:00, run_after=2022-12-20T17:50:11.187456+00:00
+[2022-12-19T17:50:11.354+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/toll_data_etl.py took 0.266 seconds
+[2022-12-19T17:50:41.775+0000] {processor.py:153} INFO - Started process (PID=2689) to work on /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:50:41.847+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/toll_data_etl.py for tasks to queue
+[2022-12-19T17:50:41.848+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:50:41.848+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:50:41.877+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ETL_toll_data']) retrieved from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:50:41.992+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:50:41.992+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-19T17:50:42.025+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:50:42.025+0000] {dag.py:3427} INFO - Setting next_dagrun for ETL_toll_data to 2022-12-19T17:50:41.859204+00:00, run_after=2022-12-20T17:50:41.859204+00:00
+[2022-12-19T17:50:42.063+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/toll_data_etl.py took 0.300 seconds
+[2022-12-19T17:51:12.774+0000] {processor.py:153} INFO - Started process (PID=2760) to work on /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:51:12.789+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/toll_data_etl.py for tasks to queue
+[2022-12-19T17:51:12.790+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:51:12.790+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:51:12.815+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ETL_toll_data']) retrieved from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:51:12.899+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:51:12.899+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-19T17:51:12.925+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:51:12.925+0000] {dag.py:3427} INFO - Setting next_dagrun for ETL_toll_data to 2022-12-19T17:51:12.798847+00:00, run_after=2022-12-20T17:51:12.798847+00:00
+[2022-12-19T17:51:13.002+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/toll_data_etl.py took 0.234 seconds
+[2022-12-19T17:51:43.899+0000] {processor.py:153} INFO - Started process (PID=2848) to work on /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:51:43.952+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/toll_data_etl.py for tasks to queue
+[2022-12-19T17:51:43.953+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:51:43.953+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:51:43.976+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ETL_toll_data']) retrieved from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:51:44.089+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:51:44.089+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-19T17:51:44.121+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:51:44.121+0000] {dag.py:3427} INFO - Setting next_dagrun for ETL_toll_data to 2022-12-19T17:51:43.960161+00:00, run_after=2022-12-20T17:51:43.960161+00:00
+[2022-12-19T17:51:44.157+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/toll_data_etl.py took 0.262 seconds
+[2022-12-19T17:52:14.422+0000] {processor.py:153} INFO - Started process (PID=2919) to work on /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:52:14.439+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/toll_data_etl.py for tasks to queue
+[2022-12-19T17:52:14.440+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:52:14.440+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:52:14.456+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ETL_toll_data']) retrieved from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:52:14.582+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:52:14.581+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-19T17:52:14.611+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:52:14.611+0000] {dag.py:3427} INFO - Setting next_dagrun for ETL_toll_data to 2022-12-19T17:52:14.445620+00:00, run_after=2022-12-20T17:52:14.445620+00:00
+[2022-12-19T17:52:14.839+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/toll_data_etl.py took 0.420 seconds
+[2022-12-19T17:52:45.377+0000] {processor.py:153} INFO - Started process (PID=2990) to work on /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:52:45.392+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/toll_data_etl.py for tasks to queue
+[2022-12-19T17:52:45.393+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:52:45.393+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:52:45.418+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ETL_toll_data']) retrieved from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:52:45.529+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:52:45.529+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-19T17:52:45.554+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:52:45.554+0000] {dag.py:3427} INFO - Setting next_dagrun for ETL_toll_data to 2022-12-19T17:52:45.401170+00:00, run_after=2022-12-20T17:52:45.401170+00:00
+[2022-12-19T17:52:45.587+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/toll_data_etl.py took 0.215 seconds
+[2022-12-19T17:53:16.232+0000] {processor.py:153} INFO - Started process (PID=3077) to work on /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:53:16.233+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/toll_data_etl.py for tasks to queue
+[2022-12-19T17:53:16.234+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:53:16.234+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:53:16.268+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ETL_toll_data']) retrieved from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:53:16.530+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:53:16.530+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-19T17:53:16.582+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:53:16.582+0000] {dag.py:3427} INFO - Setting next_dagrun for ETL_toll_data to 2022-12-19T17:53:16.244864+00:00, run_after=2022-12-20T17:53:16.244864+00:00
+[2022-12-19T17:53:16.636+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/toll_data_etl.py took 0.411 seconds
+[2022-12-19T17:53:47.231+0000] {processor.py:153} INFO - Started process (PID=3148) to work on /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:53:47.241+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/toll_data_etl.py for tasks to queue
+[2022-12-19T17:53:47.243+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:53:47.242+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:53:47.268+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ETL_toll_data']) retrieved from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:53:47.352+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:53:47.352+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-19T17:53:47.381+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:53:47.381+0000] {dag.py:3427} INFO - Setting next_dagrun for ETL_toll_data to 2022-12-19T17:53:47.250756+00:00, run_after=2022-12-20T17:53:47.250756+00:00
+[2022-12-19T17:53:47.407+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/toll_data_etl.py took 0.183 seconds
+[2022-12-19T17:54:17.961+0000] {processor.py:153} INFO - Started process (PID=3235) to work on /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:54:18.005+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/toll_data_etl.py for tasks to queue
+[2022-12-19T17:54:18.006+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:54:18.006+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:54:18.024+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ETL_toll_data']) retrieved from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:54:18.118+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:54:18.118+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-19T17:54:18.197+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:54:18.197+0000] {dag.py:3427} INFO - Setting next_dagrun for ETL_toll_data to 2022-12-19T17:54:18.012211+00:00, run_after=2022-12-20T17:54:18.012211+00:00
+[2022-12-19T17:54:18.262+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/toll_data_etl.py took 0.305 seconds
+[2022-12-19T17:54:48.587+0000] {processor.py:153} INFO - Started process (PID=3299) to work on /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:54:48.617+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/toll_data_etl.py for tasks to queue
+[2022-12-19T17:54:48.623+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:54:48.622+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:54:48.765+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ETL_toll_data']) retrieved from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:54:49.654+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:54:49.653+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-19T17:54:49.947+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:54:49.946+0000] {dag.py:3427} INFO - Setting next_dagrun for ETL_toll_data to 2022-12-19T17:54:48.663369+00:00, run_after=2022-12-20T17:54:48.663369+00:00
+[2022-12-19T17:54:50.141+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/toll_data_etl.py took 1.581 seconds
+[2022-12-19T17:55:27.696+0000] {processor.py:153} INFO - Started process (PID=3368) to work on /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:55:27.811+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/toll_data_etl.py for tasks to queue
+[2022-12-19T17:55:27.844+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:55:27.822+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:55:28.232+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ETL_toll_data']) retrieved from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:55:29.346+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:55:29.344+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-19T17:55:29.639+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:55:29.637+0000] {dag.py:3427} INFO - Setting next_dagrun for ETL_toll_data to 2022-12-19T17:55:27.978712+00:00, run_after=2022-12-20T17:55:27.978712+00:00
+[2022-12-19T17:55:29.919+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/toll_data_etl.py took 2.277 seconds
+[2022-12-19T17:56:09.847+0000] {processor.py:153} INFO - Started process (PID=3425) to work on /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:56:09.914+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/toll_data_etl.py for tasks to queue
+[2022-12-19T17:56:09.954+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:56:09.952+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:56:10.376+0000] {processor.py:753} INFO - DAG(s) dict_keys(['ETL_toll_data']) retrieved from /opt/airflow/dags/toll_data_etl.py
+[2022-12-19T17:56:12.700+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:56:12.699+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-19T17:56:13.113+0000] {logging_mixin.py:137} INFO - [2022-12-19T17:56:13.095+0000] {dag.py:3427} INFO - Setting next_dagrun for ETL_toll_data to 2022-12-19T17:56:10.083740+00:00, run_after=2022-12-20T17:56:10.083740+00:00
+[2022-12-19T17:56:14.552+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/toll_data_etl.py took 4.822 seconds

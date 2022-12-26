@@ -1,0 +1,78 @@
+[2022-12-24T10:23:39.889+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: sparkify_etl_airflow.Stage_songs scheduled__2022-12-23T00:00:00+00:00 [queued]>
+[2022-12-24T10:23:39.904+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: sparkify_etl_airflow.Stage_songs scheduled__2022-12-23T00:00:00+00:00 [queued]>
+[2022-12-24T10:23:39.904+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-24T10:23:39.904+0000] {taskinstance.py:1284} INFO - Starting attempt 2 of 4
+[2022-12-24T10:23:39.904+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-24T10:23:40.011+0000] {taskinstance.py:1304} INFO - Executing <Task(StageToRedshiftOperator): Stage_songs> on 2022-12-23 00:00:00+00:00
+[2022-12-24T10:23:40.016+0000] {standard_task_runner.py:55} INFO - Started process 733 to run task
+[2022-12-24T10:23:40.019+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'sparkify_etl_***', 'Stage_songs', 'scheduled__2022-12-23T00:00:00+00:00', '--job-id', '128', '--raw', '--subdir', 'DAGS_FOLDER/s3_to_redshift.py', '--cfg-path', '/tmp/tmp8j9fpekk']
+[2022-12-24T10:23:40.020+0000] {standard_task_runner.py:83} INFO - Job 128: Subtask Stage_songs
+[2022-12-24T10:23:40.088+0000] {task_command.py:389} INFO - Running <TaskInstance: sparkify_etl_airflow.Stage_songs scheduled__2022-12-23T00:00:00+00:00 [running]> on host 52ec6883366f
+[2022-12-24T10:23:40.181+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=bala
+AIRFLOW_CTX_DAG_ID=sparkify_etl_***
+AIRFLOW_CTX_TASK_ID=Stage_songs
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-23T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-23T00:00:00+00:00
+[2022-12-24T10:23:40.192+0000] {base.py:73} INFO - Using connection ID 'aws_credentials' for task execution.
+[2022-12-24T10:23:40.192+0000] {connection_wrapper.py:332} INFO - AWS Connection (conn_id='aws_credentials', conn_type='aws') credentials retrieved from login and password.
+[2022-12-24T10:23:40.208+0000] {stage_redshift.py:45} INFO - Copying data from S3 to Redshift staging staging_songs table
+[2022-12-24T10:23:40.208+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-24T10:23:40.208+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-24T10:23:40.209+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-24T10:23:40.209+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-24T10:23:40.209+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-24T10:23:40.209+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-24T10:23:40.209+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-24T10:23:40.209+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-24T10:23:40.209+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-24T10:23:40.209+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-24T10:23:40.210+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-24T10:23:40.210+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-12-24T10:23:40.210+0000] {stage_redshift.py:47} INFO - Rendered Key: song_data
+[2022-12-24T10:23:40.210+0000] {stage_redshift.py:59} INFO - Executing query to copy data from 's3://udacity-dend/song_data' to 'staging_songs'
+[2022-12-24T10:23:40.216+0000] {base.py:73} INFO - Using connection ID 'redshift' for task execution.
+[2022-12-24T10:23:40.222+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/plugins/operators/stage_redshift.py", line 60, in execute
+    redshift.run(formatted_sql)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/hooks/sql.py", line 331, in run
+    with closing(self.get_conn()) as conn:
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/hooks/postgres.py", line 144, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "dwcluster.c4qooqjidnaf.ap-south-1.redshift.amazonaws.com" to address: No address associated with hostname
+
+[2022-12-24T10:23:40.232+0000] {taskinstance.py:1327} INFO - Marking task as UP_FOR_RETRY. dag_id=sparkify_etl_***, task_id=Stage_songs, execution_date=20221223T000000, start_date=20221224T102339, end_date=20221224T102340
+[2022-12-24T10:23:40.254+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 128 for task Stage_songs (could not translate host name "dwcluster.c4qooqjidnaf.ap-south-1.redshift.amazonaws.com" to address: No address associated with hostname
+; 733)
+[2022-12-24T10:23:40.271+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-12-24T10:23:40.305+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

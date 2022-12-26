@@ -1,0 +1,55 @@
+[2022-12-24T12:49:22.328+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: ETL_toll_data.unzip_data manual__2022-12-24T10:17:31.967034+00:00 [queued]>
+[2022-12-24T12:49:22.340+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: ETL_toll_data.unzip_data manual__2022-12-24T10:17:31.967034+00:00 [queued]>
+[2022-12-24T12:49:22.340+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-24T12:49:22.340+0000] {taskinstance.py:1284} INFO - Starting attempt 3 of 4
+[2022-12-24T12:49:22.340+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-24T12:49:22.371+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): unzip_data> on 2022-12-24 10:17:31.967034+00:00
+[2022-12-24T12:49:22.408+0000] {standard_task_runner.py:55} INFO - Started process 359 to run task
+[2022-12-24T12:49:22.412+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ETL_toll_data', 'unzip_data', 'manual__2022-12-24T10:17:31.967034+00:00', '--job-id', '147', '--raw', '--subdir', 'DAGS_FOLDER/toll_data_etl.py', '--cfg-path', '/tmp/tmpdm2_c0t1']
+[2022-12-24T12:49:22.413+0000] {standard_task_runner.py:83} INFO - Job 147: Subtask unzip_data
+[2022-12-24T12:49:22.477+0000] {task_command.py:389} INFO - Running <TaskInstance: ETL_toll_data.unzip_data manual__2022-12-24T10:17:31.967034+00:00 [running]> on host ea748eb5c826
+[2022-12-24T12:49:22.604+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=bala@yopmail.com
+AIRFLOW_CTX_DAG_OWNER=bala
+AIRFLOW_CTX_DAG_ID=ETL_toll_data
+AIRFLOW_CTX_TASK_ID=unzip_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-24T10:17:31.967034+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-24T10:17:31.967034+00:00
+[2022-12-24T12:49:22.605+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-24T12:49:22.605+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0250EN-SkillsNetwork/labs/Final%20Assignment/tolldata.tgz &&  tar zxvf tolldata.tgz -C ./']
+[2022-12-24T12:49:22.618+0000] {subprocess.py:86} INFO - Output:
+[2022-12-24T12:49:22.624+0000] {subprocess.py:93} INFO - --2022-12-24 12:49:22--  https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0250EN-SkillsNetwork/labs/Final%20Assignment/tolldata.tgz
+[2022-12-24T12:49:22.903+0000] {subprocess.py:93} INFO - Resolving cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud (cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud)... 169.45.118.108
+[2022-12-24T12:49:23.132+0000] {subprocess.py:93} INFO - Connecting to cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud (cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud)|169.45.118.108|:443... connected.
+[2022-12-24T12:49:23.945+0000] {subprocess.py:93} INFO - HTTP request sent, awaiting response... 200 OK
+[2022-12-24T12:49:23.945+0000] {subprocess.py:93} INFO - Length: 528994 (517K) [application/x-tar]
+[2022-12-24T12:49:23.946+0000] {subprocess.py:93} INFO - Saving to: ‘tolldata.tgz’
+[2022-12-24T12:49:23.946+0000] {subprocess.py:93} INFO - 
+[2022-12-24T12:49:24.400+0000] {subprocess.py:93} INFO -      0K .......... .......... .......... .......... ..........  9%  110K 4s
+[2022-12-24T12:49:24.631+0000] {subprocess.py:93} INFO -     50K .......... .......... .......... .......... .......... 19%  217K 3s
+[2022-12-24T12:49:24.636+0000] {subprocess.py:93} INFO -    100K .......... .......... .......... .......... .......... 29% 9.23M 2s
+[2022-12-24T12:49:24.640+0000] {subprocess.py:93} INFO -    150K .......... .......... .......... .......... .......... 38% 13.6M 1s
+[2022-12-24T12:49:24.863+0000] {subprocess.py:93} INFO -    200K .......... .......... .......... .......... .......... 48%  224K 1s
+[2022-12-24T12:49:24.880+0000] {subprocess.py:93} INFO -    250K .......... .......... .......... .......... .......... 58% 3.01M 1s
+[2022-12-24T12:49:24.883+0000] {subprocess.py:93} INFO -    300K .......... .......... .......... .......... .......... 67% 13.5M 0s
+[2022-12-24T12:49:24.889+0000] {subprocess.py:93} INFO -    350K .......... .......... .......... .......... .......... 77% 13.5M 0s
+[2022-12-24T12:49:24.907+0000] {subprocess.py:93} INFO -    400K .......... .......... .......... .......... .......... 87% 2.49M 0s
+[2022-12-24T12:49:25.092+0000] {subprocess.py:93} INFO -    450K .......... .......... .......... .......... .......... 96%  270K 0s
+[2022-12-24T12:49:25.092+0000] {subprocess.py:93} INFO -    500K .......... ......                                     100% 54.4M=1.1s
+[2022-12-24T12:49:25.092+0000] {subprocess.py:93} INFO - 
+[2022-12-24T12:49:25.093+0000] {subprocess.py:93} INFO - 2022-12-24 12:49:25 (450 KB/s) - ‘tolldata.tgz’ saved [528994/528994]
+[2022-12-24T12:49:25.093+0000] {subprocess.py:93} INFO - 
+[2022-12-24T12:49:25.097+0000] {subprocess.py:93} INFO - fileformats.txt
+[2022-12-24T12:49:25.098+0000] {subprocess.py:93} INFO - payment-data.txt
+[2022-12-24T12:49:25.102+0000] {subprocess.py:93} INFO - ._tollplaza-data.tsv
+[2022-12-24T12:49:25.102+0000] {subprocess.py:93} INFO - tollplaza-data.tsv
+[2022-12-24T12:49:25.106+0000] {subprocess.py:93} INFO - ._vehicle-data.csv
+[2022-12-24T12:49:25.107+0000] {subprocess.py:93} INFO - vehicle-data.csv
+[2022-12-24T12:49:25.110+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-12-24T12:49:25.152+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=ETL_toll_data, task_id=unzip_data, execution_date=20221224T101731, start_date=20221224T124922, end_date=20221224T124925
+[2022-12-24T12:49:25.233+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-24T12:49:25.270+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

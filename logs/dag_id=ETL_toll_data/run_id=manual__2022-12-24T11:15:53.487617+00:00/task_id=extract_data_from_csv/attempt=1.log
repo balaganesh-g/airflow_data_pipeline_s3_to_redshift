@@ -1,0 +1,105 @@
+[2022-12-24T12:49:22.541+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: ETL_toll_data.extract_data_from_csv manual__2022-12-24T11:15:53.487617+00:00 [queued]>
+[2022-12-24T12:49:22.552+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: ETL_toll_data.extract_data_from_csv manual__2022-12-24T11:15:53.487617+00:00 [queued]>
+[2022-12-24T12:49:22.553+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-24T12:49:22.553+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2022-12-24T12:49:22.553+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-24T12:49:22.581+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): extract_data_from_csv> on 2022-12-24 11:15:53.487617+00:00
+[2022-12-24T12:49:22.586+0000] {standard_task_runner.py:55} INFO - Started process 360 to run task
+[2022-12-24T12:49:22.590+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ETL_toll_data', 'extract_data_from_csv', 'manual__2022-12-24T11:15:53.487617+00:00', '--job-id', '148', '--raw', '--subdir', 'DAGS_FOLDER/toll_data_etl.py', '--cfg-path', '/tmp/tmpk0jaeaoc']
+[2022-12-24T12:49:22.590+0000] {standard_task_runner.py:83} INFO - Job 148: Subtask extract_data_from_csv
+[2022-12-24T12:49:22.653+0000] {task_command.py:389} INFO - Running <TaskInstance: ETL_toll_data.extract_data_from_csv manual__2022-12-24T11:15:53.487617+00:00 [running]> on host ea748eb5c826
+[2022-12-24T12:49:22.759+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=bala@yopmail.com
+AIRFLOW_CTX_DAG_OWNER=bala
+AIRFLOW_CTX_DAG_ID=ETL_toll_data
+AIRFLOW_CTX_TASK_ID=extract_data_from_csv
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-24T11:15:53.487617+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-24T11:15:53.487617+00:00
+[2022-12-24T12:49:22.760+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-24T12:49:22.760+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'cut -d"," -f1,2,3,4 vehicle-data.csv > csv_data.csv']
+[2022-12-24T12:49:22.773+0000] {subprocess.py:86} INFO - Output:
+[2022-12-24T12:49:22.777+0000] {subprocess.py:93} INFO - cut: vehicle-data.csv: No such file or directory
+[2022-12-24T12:49:22.777+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2022-12-24T12:49:22.790+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f"Bash command failed. The command returned a non-zero exit code {result.exit_code}."
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-12-24T12:49:22.794+0000] {taskinstance.py:1327} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_toll_data, task_id=extract_data_from_csv, execution_date=20221224T111553, start_date=20221224T124922, end_date=20221224T124922
+[2022-12-24T12:49:22.824+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/email.py:120: RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+  send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+
+[2022-12-24T12:49:22.825+0000] {configuration.py:635} WARNING - section/key [smtp/smtp_user] not found in config
+[2022-12-24T12:49:22.825+0000] {email.py:229} INFO - Email alerting: attempt 1
+[2022-12-24T12:49:22.831+0000] {configuration.py:635} WARNING - section/key [smtp/smtp_user] not found in config
+[2022-12-24T12:49:22.832+0000] {email.py:229} INFO - Email alerting: attempt 1
+[2022-12-24T12:49:22.832+0000] {taskinstance.py:1835} ERROR - Failed to send email to: ['bala@yopmail.com']
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1378, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1524, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1585, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f"Bash command failed. The command returned a non-zero exit code {result.exit_code}."
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 2235, in email_alert
+    send_email(task.email, subject, html_content)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 72, in send_email
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 120, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 231, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 265, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/local/lib/python3.7/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.7/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.7/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/local/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/local/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+OSError: [Errno 99] Cannot assign requested address
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1833, in handle_failure
+    self.email_alert(error, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 2237, in email_alert
+    send_email(task.email, subject, html_content_err)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 72, in send_email
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 120, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 231, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/email.py", line 265, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/local/lib/python3.7/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.7/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.7/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/local/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/local/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+OSError: [Errno 99] Cannot assign requested address
+[2022-12-24T12:49:22.859+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 148 for task extract_data_from_csv (Bash command failed. The command returned a non-zero exit code 1.; 360)
+[2022-12-24T12:49:22.881+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-12-24T12:49:22.916+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check
